@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+body {
+  background-color: white;
+  font-family: "Tahoma";
+  font-weight: 400;
+  color: black;
+}
+h1 {
+  color: black;
+}
+h2 {
+  color: black;
+}
+img {
+  height: 630px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+
+.player-left {
+  order: 1;
+  width: auto;
+  height: auto;
+  background: linear-gradient(#7297ec, #243867);
+}
+.stats-left {
+  order: 2;
+  width: 33%;
+  font-size: 25px;
+  text-align: center;
+  border-width: 0px 0px 0px 1px;
+  border-style: solid;
+}
+
+.stats-left h2 {
+  padding: 37px 0px 37px 0px;
+  margin: 0%;
+  height: 53px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+}
+
+.stats-right h2 {
+  padding: 37px 0px 37px 0px;
+  margin: 0%;
+  height: 53px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+}
+
+.stats {
+  order: 3;
+  border-style: solid;
+  border-width: 0px 1px 0px 1px;
+  width: 33%;
+  font-size: 2em;
+}
+
+.stats h3 {
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  margin: 0px;
+  height: 53px;
+  padding: 37px 0px 37px 0px;
+  text-align: center;
+}
+
+.stats-right {
+  order: 4;
+  width: 33%;
+  font-size: 25px;
+  text-align: center;
+  border-width: 0px 1px 0px 0px;
+  border-style: solid;
+}
+
+.player-right {
+  order: 4;
+  width: auto;
+  height: auto;
+  background: linear-gradient(#7297ec, #243867);
+}
+.player-header {
+  padding: 10px;
+  color: black;
+}
+.player-search-one {
+  order: 1;
+  padding-right: 400px;
+}
+
+.player-search-two {
+  order: 1;
+  color: black;
+}
+.player-names {
+  background: white;
+  color: black;
+}
