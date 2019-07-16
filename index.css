@@ -27,6 +27,7 @@ img {
   width: auto;
   height: auto;
   background: linear-gradient(#7297ec, #243867);
+  min-width: 340px;
 }
 .stats-left {
   order: 2;
@@ -35,6 +36,7 @@ img {
   text-align: center;
   border-width: 0px 0px 0px 1px;
   border-style: solid;
+  max-width: 250px;
 }
 
 .stats-left h2 {
@@ -77,6 +79,7 @@ img {
   text-align: center;
   border-width: 0px 1px 0px 0px;
   border-style: solid;
+  max-width: 250px;
 }
 
 .player-right {
@@ -84,6 +87,7 @@ img {
   width: auto;
   height: auto;
   background: linear-gradient(#7297ec, #243867);
+  min-width: 340px;
 }
 .player-header {
   padding: 10px;
@@ -101,4 +105,54 @@ img {
 .player-names {
   background: white;
   color: black;
+}
+.operator {
+  border: 1px solid black;
+  margin: 0px;
+  height: auto;
+  padding: 37px 0px 37px 0px;
+  text-align: center;
+  flex-grow: 2;
+  font-size: 2em;
+}
+.operator-icons img {
+  height: 120px;
+}
+.operator-icons {
+  border-style: solid;
+  border-width: 0px 1px 0px 0px;
+}
+.operator-scroll-left {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  max-width: 590px;
+  overflow-x: scroll;
+}
+.operator-container {
+  justify-content: space-between;
+}
+
+.operator-scroll-right {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  max-width: 590px;
+  overflow-x: scroll;
+}
+.wrapper {
+  align-content: center;
+  margin: auto;
+  max-width: 1500px;
+}
+.stat-toggle {
+  display: none;
+}
+
+.correct {
+  background: #47ff6c;
+}
+
+.wrong {
+  background: #ff4747;
 }

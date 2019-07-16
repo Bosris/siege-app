@@ -9,33 +9,340 @@
     <title>Siege App</title>
   </head>
   <body>
-    <h1>Siege App</h1>
-    <form>
-      <input required id="search" type="search" placeholder="Enter Username" />
-      <input id="submit" type="submit" />
-      <input required id="search" type="search" placeholder="Enter Player 2 Username" />
-    </form>
-    <div class="container player-names">
-      <h2 id="player-search-one" class="player-header">Player One</h2>
-      <h2 id="player-search-two " class="player-header">Player two</h2>
-    </div>
-    <div class="container">
-      <div class="player-left"><img src="./images/doc.png" /></div>
-      <div class="stats-left"></div>
-      <div class="stats">
-        <h3>KDA</h2>
-        <h3>Kills</h2>
-        <h3>Deaths</h2>
-        <h3>Wins</h2>
-        <h3>Losses</h2>
+    <div class="wrapper">
+      <h1>Siege App</h1>
+      <form>
+        <input
+          required
+          id="search"
+          type="search"
+          placeholder="Enter Username"
+        />
+
+        <input
+          required
+          id="search-two"
+          type="search"
+          placeholder="Enter Player 2 Username"
+        />
+        <input id="submit" type="submit" />
+      </form>
+      <div class="container player-names stat-toggle">
+        <h2 id="player-search-one" class="player-header">Player One</h2>
+        <h2 id="player-search-two" class="player-header">Player two</h2>
       </div>
-      <div class="stats-right"></div>
-      <div class="player-right"><img src="./images/doc.png" /></div>
-    </div>
-    <div class="container">
-      <div class="operator-scroll-left"></div>
-      <div class="operator">Operators</div>
-      <div class="operator-scroll-right"></div>
+      <div class="container stat-toggle">
+        <div class="player-left">
+          <img class="left-op" />
+        </div>
+        <div class="stats-left"></div>
+        <div class="stats">
+          <h3>KDA</h3>
+          <h3>Kills</h3>
+          <h3>Deaths</h3>
+          <h3>Wins</h3>
+          <h3>Losses</h3>
+        </div>
+        <div class="stats-right"></div>
+        <div class="player-right">
+          <img class="right-op" />
+        </div>
+      </div>
+      <div class="container operator-container stat-toggle">
+        <div class="operator-scroll-left">
+          <div name="3:F" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/alibi.png" />
+          </div>
+          <div name="3:2" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/ash.png" />
+          </div>
+          <div name="5:5" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/bandit.png" />
+          </div>
+          <div name="2:7" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/blackbeard.png" />
+          </div>
+          <div name="2:5" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/blitz.png" />
+          </div>
+          <div name="2:6" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/buck.png" />
+          </div>
+          <div name="2:8" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/capitao.png" />
+          </div>
+          <div name="2:2" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/castle.png" />
+          </div>
+          <div name="3:8" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/caveira.png" />
+          </div>
+          <div name="3:10" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/clash.png" />
+          </div>
+          <div name="2:3" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/doc.png" />
+          </div>
+          <div name="2:D" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/dokkaebi.png" />
+          </div>
+          <div name="3:9" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/echo.png" />
+          </div>
+          <div name="2:C" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/ela.png" />
+          </div>
+          <div name="4:E" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/finka.png" />
+          </div>
+          <div name="3:6" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/frost.png" />
+          </div>
+          <div name="3:4" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/fuze.png" />
+          </div>
+          <div name="2:4" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/glaz.png" />
+          </div>
+          <div name="2:12" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/gridlock.png" />
+          </div>
+          <div name="2:9" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/hibana.png" />
+          </div>
+          <div name="3:5" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/iq.png" />
+          </div>
+          <div name="2:A" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/jackal.png" />
+          </div>
+          <div name="4:5" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/jager.png" />
+          </div>
+          <div name="3:11" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/kaid.png" />
+          </div>
+          <div name="4:4" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/kapkan.png" />
+          </div>
+          <div name="3:B" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/lesion.png" />
+          </div>
+          <div name="3:E" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/lion.png" />
+          </div>
+          <div name="2:F" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/maestro.png" />
+          </div>
+          <div name="2:10" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/maverick.png" />
+          </div>
+          <div name="3:A" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/mira.png" />
+          </div>
+          <div name="5:3" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/montagne.png" />
+          </div>
+          <div name="3:12" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/mozzie.png" />
+          </div>
+          <div name="3:1" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/mute.png" />
+          </div>
+          <div name="" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/nokk.png" />
+          </div>
+          <div name="2:11" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/nomad.png" />
+          </div>
+          <div name="4:2" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/pulse.png" />
+          </div>
+          <div name="3:3" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/rook.png" />
+          </div>
+          <div name="4:1" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/sledge.png" />
+          </div>
+          <div name="2:1" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/smoke.png" />
+          </div>
+          <div name="5:4" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/tachanka.png" />
+          </div>
+          <div name="5:1" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/thatcher.png" />
+          </div>
+          <div name="5:2" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/thermite.png" />
+          </div>
+          <div name="4:3" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/twitch.png" />
+          </div>
+          <div name="3:7" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/valkyrie.png" />
+          </div>
+          <div name="3:D" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/vigil.png" />
+          </div>
+          <div name="" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/warden.png" />
+          </div>
+          <div name="2:B" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/ying.png" />
+          </div>
+          <div name="3:C" onclick="iconClick(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/zofia.png" />
+          </div>
+        </div>
+        <h3 class="operator">Operators</h3>
+        <div class="operator-scroll-right">
+          <div name="3:F" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/alibi.png" />
+          </div>
+          <div name="3:2" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/ash.png" />
+          </div>
+          <div name="5:5" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/bandit.png" />
+          </div>
+          <div name="2:7" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/blackbeard.png" />
+          </div>
+          <div name="2:5" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/blitz.png" />
+          </div>
+          <div name="2:6" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/buck.png" />
+          </div>
+          <div name="2:8" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/capitao.png" />
+          </div>
+          <div name="2:2" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/castle.png" />
+          </div>
+          <div name="3:8" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/caveira.png" />
+          </div>
+          <div name="3:10" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/clash.png" />
+          </div>
+          <div name="2:3" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/doc.png" />
+          </div>
+          <div name="2:D" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/dokkaebi.png" />
+          </div>
+          <div name="3:9" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/echo.png" />
+          </div>
+          <div name="2:C" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/ela.png" />
+          </div>
+          <div name="4:E" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/finka.png" />
+          </div>
+          <div name="3:6" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/frost.png" />
+          </div>
+          <div name="3:4" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/fuze.png" />
+          </div>
+          <div name="2:4" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/glaz.png" />
+          </div>
+          <div name="2:12" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/gridlock.png" />
+          </div>
+          <div name="2:9" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/hibana.png" />
+          </div>
+          <div name="3:5" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/iq.png" />
+          </div>
+          <div name="2:A" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/jackal.png" />
+          </div>
+          <div name="4:5" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/jager.png" />
+          </div>
+          <div name="3:11" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/kaid.png" />
+          </div>
+          <div name="4:4" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/kapkan.png" />
+          </div>
+          <div name="3:B" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/lesion.png" />
+          </div>
+          <div name="3:E" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/lion.png" />
+          </div>
+          <div name="2:F" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/maestro.png" />
+          </div>
+          <div name="2:10" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/maverick.png" />
+          </div>
+          <div name="3:A" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/mira.png" />
+          </div>
+          <div name="5:3" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/montagne.png" />
+          </div>
+          <div name="3:12" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/mozzie.png" />
+          </div>
+          <div name="3:1" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/mute.png" />
+          </div>
+          <div name="" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/nokk.png" />
+          </div>
+          <div name="2:11" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/nomad.png" />
+          </div>
+          <div name="4:2" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/pulse.png" />
+          </div>
+          <div name="3:3" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/rook.png" />
+          </div>
+          <div name="4:1" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/sledge.png" />
+          </div>
+          <div name="2:1" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/smoke.png" />
+          </div>
+          <div name="5:4" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/tachanka.png" />
+          </div>
+          <div name="5:1" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/thatcher.png" />
+          </div>
+          <div name="5:2" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/thermite.png" />
+          </div>
+          <div name="4:3" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/twitch.png" />
+          </div>
+          <div name="3:7" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/valkyrie.png" />
+          </div>
+          <div name="3:D" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/vigil.png" />
+          </div>
+          <div name="" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/warden.png" />
+          </div>
+          <div name="2:B" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/ying.png" />
+          </div>
+          <div name="3:C" onclick="iconClick2(this)" class="operator-icons">
+            <img src="/r6icons/High-resolution PNG/zofia.png" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="index.js"></script>
